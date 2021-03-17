@@ -17,7 +17,7 @@ import s from './App.module.css'
 
 function App({lang}) {
 
-    const { t, i18n } = useTranslation();
+    const { t, i18n } = jest ? {t:s=>s} : useTranslation();
 
     const {token, login, logout, userId, ava, name} = useAuth()
     const isAuthenticated = !!token
