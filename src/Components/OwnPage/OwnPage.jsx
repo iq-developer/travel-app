@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import CardCountry from "../CardCountry/CardCountry";
 import s from './OwnPage.module.css';
+import cn from 'classnames';
 import background from './../../common/img/tower.jpg';
 import CirklePreloader from "../preloaders/CirklePreloader/CirklePreloader";
 import { Input } from 'antd';
@@ -19,11 +20,11 @@ const OwnPage = ({t, countrysForCard, lang, inputValue, SearchArr, isFetching, a
             {!isFetching && <>
             <div style={{ backgroundImage: `url(${background})` }} className={s.headerSearch}>
 
-                <h1>
+                <h1 className={s.title}>
                     {languageFunc(lang,
-                        'Найдите лучшее место',
-                        'Find the best place to visit',
-                        'Finde den besten Ort')}</h1>
+                        'Путешествие начинается здесь',
+                        'The journey starts here',
+                        'Die Reise beginnt hier')}</h1>
                 <div className={s.fl}>
                 <div className={s.input}>
                     <Search
@@ -33,7 +34,7 @@ const OwnPage = ({t, countrysForCard, lang, inputValue, SearchArr, isFetching, a
                             'Stadt oder Land eingeben ')}
                         allowClear
                         enterButton={languageFunc(lang,
-                    'Поиск',
+                    'Найти',
                         'Search',
                         'Suche')}
                         size="large"
@@ -46,9 +47,9 @@ const OwnPage = ({t, countrysForCard, lang, inputValue, SearchArr, isFetching, a
                 </div>
 
             </div>
-        <div className={s.ownPage}>
+        <div className={cn(s.ownPage, s.grid)}>
 
-            <img src={ava} alt=""/>
+            {/* <img src={ava} alt=""/> */}
             {inputValue && SearchArr.map(card => <CardCountry
                 t={t} key={card._id}
                 id={card._id}
