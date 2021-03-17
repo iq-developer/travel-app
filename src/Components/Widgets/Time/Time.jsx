@@ -125,8 +125,10 @@ componentDidMount() {
         }
 
 
-        return ` ${mo},${day},${y}
-         ${hrs}:${mins}:${secs}  `;
+        return (
+          `${hrs}:${mins}:${secs}
+          ${mo}, ${day}, ${y}`
+        ); 
 
     }
 
@@ -139,9 +141,9 @@ componentDidMount() {
         return (
             <article className={s.time}>
                 <h4>{languageFunc(this.props.lang,
-                    'Дата в столице',
-                    'Date in the capital',
-                    'Datum in der Hauptstadt')}</h4>
+                    'Местное время',
+                    'The local time',
+                    'Die Ortszeit')}</h4>
                 <h3>{this.state.time}</h3>
             </article>
         );

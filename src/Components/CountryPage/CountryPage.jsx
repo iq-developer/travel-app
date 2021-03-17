@@ -19,7 +19,13 @@ const CountryPage = ({ lang, countryInfo, isFetching, id, token, isAuthenticated
         <div className={s.countrypage}>
             {!!isFetching && <CirklePreloader />}
             {!isFetching && <>
-                <h1 className={s.center}>{countryInfo.name}</h1>
+              <h1 className={s.title}>{countryInfo.name}</h1>
+                <div className={s.widgets}>
+                  <WeatherContainer city={countryInfo.capital} />
+                  <ConverterContainer youIso={countryInfo.iso}/>
+                  <Time utc={countryInfo.utc} lang={lang} />
+                </div>
+                
                 <div className={s.centerfl}>
                     <div className={s.pagef}>
                         <img className={s.imgCountry} src={countryInfo.img} alt={'IMG_COUNTRY'}/>
@@ -32,18 +38,14 @@ const CountryPage = ({ lang, countryInfo, isFetching, id, token, isAuthenticated
                                 <p>{languageFunc(lang,
                                     'Столица',
                                     'Capital',
-                                    'Hauptstadt')}:
-                                    {countryInfo.capital}
+                                    'Hauptstadt')}:&nbsp; 
+                                    <strong>{countryInfo.capital}</strong>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                    <div className={s.widgets}>
-                        <WeatherContainer city={countryInfo.capital} />
-                        <ConverterContainer youIso={countryInfo.iso}/>
-                        <Time utc={countryInfo.utc} lang={lang} />
-                    </div>
+
                 <div   className={s.bor}>
                     <h1>{languageFunc(lang,
                         'Видео о стране',
