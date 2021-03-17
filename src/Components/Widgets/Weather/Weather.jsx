@@ -19,9 +19,9 @@ const Weather = React.memo(({SetWeatherThunk, weather, city, isFetching, languag
     return (
         <article className={s.weather}>
             <h4>{languageFunc(lang,
-                'Погода в столице',
-                'Weather in the capital',
-                'Wetter in der Hauptstadt')}</h4>
+                'Погода в г. ',
+                'Weather in ',
+                'Wetter in ')}{city}</h4>
             {!!isFetching && <PointLoader />}
 
             { !isFetching &&!!weather.data && <div>

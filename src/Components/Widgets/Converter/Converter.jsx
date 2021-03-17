@@ -16,9 +16,9 @@ const Converter = ({ youIso, valuteUSD, valueEUR, valueRUB, isFetching, lang}) =
             {!!isFetching && <PointLoader />}
             {!isFetching && <>
                 <h4>{languageFunc(lang,
-                    'Курс в стране',
-                    'Course in the country',
-                    'Kurs auf dem Land')}</h4>
+                    'Курс валют',
+                    'Exchange rates',
+                    'Wechselkurse')}</h4>
                 <div>1 {youIso} = {valuteUSD} USD </div>
                 <div>1 {youIso} = {valueEUR} EUR </div>
                 <div>1 {youIso} = {valueRUB} RUB </div>

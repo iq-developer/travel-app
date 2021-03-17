@@ -5,11 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
+  border-bottom: solid 1px #ccc;
   z-index: 1;
 }
 .visable {
   background-color: #fafafa;
-  border-bottom: #ccc 1px solid;
+  border-bottom: solid 1px #ccc;
 }
 .logo {
   font-size: 3em;
