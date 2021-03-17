@@ -1,5 +1,5 @@
 {
-  "homepage": "http://iq-developer.github.io/travel-app/tree/develop-slavalobikov",
+  "homepage": "http://iq-developer.github.io/travel-app/tree/develop",
   "name": "travel-app",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,8 @@
     "antd": "^4.12.3",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "gh-pages": "^3.1.0",
     "google-map-react": "^2.1.9",
     "i18next": "^19.9.2",
@@ -28,6 +30,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-test-renderer": "^17.0.1",
     "react-yandex-maps": "^4.6.0",
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
