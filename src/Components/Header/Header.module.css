@@ -8,7 +8,7 @@
   z-index: 1;
 }
 .visable {
-  background-color: #fff;
+  background-color: #fafafa;
   border-bottom: #ccc 1px solid;
 }
 .logo {
@@ -21,7 +21,7 @@
   top: 12px;
 }
 .unvisable {
-  background-color: #fafafa;
+  background-color: #fff;
 }
 .selected {
   position:absolute;
@@ -33,7 +33,6 @@
   top: 32px;
   left: 200px;
 }
-/* iq-developer */
 .authorization {
   position: absolute;
   top: 35px;
@@ -43,10 +42,4 @@
 }
 .authorization:hover {
   opacity: 0.8;
-}
-
-
-
-@media (max-width: 520px) {
-
 }

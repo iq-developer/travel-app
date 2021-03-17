@@ -12,6 +12,7 @@
 
 .input {
   width: 700px;
+  margin: 0 20px;
 }
 
 .fl {
@@ -25,10 +26,9 @@
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .ownPage {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-height: 100vh;
+  max-width: 1230px;
+  margin: 20px auto;
+  padding: 0 20px 20px;
 }
 .preloader {
   height: calc(100vh - 60px);
@@ -37,6 +37,16 @@
   align-items: center;
   font-size: 50px;
 }
+
+.title {
+  font-weight: 700;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-gap: 2vw;
+}
+
 
 @media (max-width: 520px) {
   .headerSearch h1 {
