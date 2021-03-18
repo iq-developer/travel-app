@@ -1,0 +1,55 @@
+.weather {
+    min-height: 200px;
+    min-width: 150px;
+    text-align:center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    padding: 0 50px 20px;
+}
+.temp {
+    display: flex;
+    align-items: center;
+}
+
+.temperatura {
+    margin-top: 15px;
+}
+.float {
+    float: left;
+}
+
+.p20 {
+    padding-right: 20px;
+}
+
+.weatherDescription {
+    font-size: 0.8em;
+}
+/*
+
+.city {
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+}
+
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperatura {
+    margin-left: 20px;
+    font-size: 25px;
+
+    color:grey;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    margin-left: 40px;
+}*/

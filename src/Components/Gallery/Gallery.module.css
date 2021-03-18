@@ -1,0 +1,31 @@
+.gall {
+    /*
+    width:500px;
+    */
+}
+.h1 {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.pointer {
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.pointer:hover {
+    color:gold;
+    transition: 0.5s;
+}
+
+.dima {
+    width: 500px;
+    height: 500px;
+}
+
+.active {
+    color: blue;
+}
+.ul li {
+    padding: 5px;
+}

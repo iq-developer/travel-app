@@ -1,0 +1,15 @@
+{
+  "title": "Internationalizing with i18next",
+  "description": {
+    "part1": "To ddsdsdsdsd</1> and save to reload.",
+    "part2": "Switch langusfsfsfsfsfwfsing buttons above."
+  },
+  "header": {
+  "main": "die Haupt"
+  },
+
+  "countryCard" : {
+    "name": "  Das Land",
+    "capital": "Hauptstadt"
+  }
+}

@@ -1,0 +1,47 @@
+.header {
+  height: 100px;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: solid 1px #ccc;
+  z-index: 1;
+}
+.visable {
+  background-color: #fafafa;
+  border-bottom: solid 1px #ccc;
+}
+.logo {
+  font-size: 3em;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  position: absolute;
+  left: 30px;
+  top: 12px;
+}
+.unvisable {
+  background-color: #fff;
+}
+.selected {
+  position:absolute;
+  z-index: 99999;
+  right: 40px;
+}
+.inp {
+  position: absolute;
+  top: 32px;
+  left: 200px;
+}
+.authorization {
+  position: absolute;
+  top: 35px;
+  right: 120px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.authorization:hover {
+  opacity: 0.8;
+}
