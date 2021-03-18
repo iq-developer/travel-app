@@ -3,19 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {Provider} from "react-redux";
 import {store} from "./redux/redux";
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 
 import './i18n'
 import AppContainer from "./Containers/AppContainer";
 
 ReactDOM.render(
-    <BrowserRouter>
+    <HashRouter>
         <Provider store={store} >
             <Suspense fallback={<div>Loading...</div>}>
                 <AppContainer  />
             </Suspense>
         </Provider>
-    </BrowserRouter>
+    </HashRouter>
   ,
   document.getElementById('root')
 );

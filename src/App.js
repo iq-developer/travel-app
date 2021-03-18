@@ -34,6 +34,7 @@ function App({lang}) {
                              i18n={i18n}
                              lang={lang}
                              name={name}
+                             ava={ava}
                              logout={logout}
                              isAuthenticated={isAuthenticated} />
             <Route path={'/'} exact render={() => <OwnPageContainer ava={ava} lang={lang} t={t} />} />
